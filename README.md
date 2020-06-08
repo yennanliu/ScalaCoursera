@@ -1,6 +1,6 @@
 # [ScalaCoursera](https://www.coursera.org/specializations/scala?fbclid=IwAR1gnEYd2wFF4v3LPMusnhB1GIxR0xgnxHyjdqF3iyIQmrRHPBoKGrl_VfA)
 > Functional Programming in Scala Course 
-- [Functional Programming Principles in Scala](https://github.com/yennanliu/ScalaCoursera/FP-Principal-Scala)
+- [Functional Programming Principles in Scala](https://github.com/yennanliu/ScalaCoursera/tree/master/FP-Principal-Scala/target)
 - Functional Program Design in Scala
 - Parallel programming
 - Big Data Analysis with Scala and Spark
