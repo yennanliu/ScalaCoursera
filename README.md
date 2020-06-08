@@ -1,6 +1,6 @@
-# ScalaCoursera
+# [ScalaCoursera](https://www.coursera.org/specializations/scala?fbclid=IwAR1gnEYd2wFF4v3LPMusnhB1GIxR0xgnxHyjdqF3iyIQmrRHPBoKGrl_VfA)
 > Functional Programming in Scala Course 
-- Functional Programming Principles in Scala
+- [Functional Programming Principles in Scala](https://github.com/yennanliu/ScalaCoursera/FP-Principal-Scala)
 - Functional Program Design in Scala
 - Parallel programming
 - Big Data Analysis with Scala and Spark
@@ -19,4 +19,5 @@
 	- https://www.coursera.org/learn/progfun1/supplement/VuJFf/intellij-idea-tutorial
 - SBT tutorial 
 	- https://www.coursera.org/learn/progfun1/supplement/uV974/sbt-tutorial-and-submission-of-assignments-please-read
-- [Martin Odersky, "Working Hard to Keep It Simple"](https://www.youtube.com/watch?v=3jg1AheF4n0) - OSCON Java 2011
+-  Tech in Scala to deal with the parallelism challenge
+	- [Martin Odersky, "Working Hard to Keep It Simple"](https://www.youtube.com/watch?v=3jg1AheF4n0) - OSCON Java 2011
