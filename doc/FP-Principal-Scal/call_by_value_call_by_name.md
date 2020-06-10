@@ -46,33 +46,29 @@ This is because call-by-value functions compute the passed-in expression's value
 ```scala 
 def test(x:Int, y:Int)= x*x
 ```
-
 we want to examine the evaluation strategy and determine which one is faster (less steps) in these conditions: 
 
 ```scala
 test (2,3)
 ```
-call by value: test(2,3) -> 2*2 -> 4
-call by name: test(2,3) -> 2*2 -> 4
+- call by value: test(2,3) -> 2*2 -> 4
+- call by name: test(2,3) -> 2*2 -> 4
 -> Here the result is reached with the same number of steps.
-
 ```scala
 test (3+4,8)
 ```
-call by value: test (7,8) -> 7*7 -> 49
-call by name: (3+4) (3+4) -> 7(3+4)-> 7*7 ->49
+- call by value: test (7,8) -> 7*7 -> 49
+- call by name: (3+4) (3+4) -> 7(3+4)-> 7*7 ->49
 -> Here call by value is faster.
-
 ```scala
 test (7,2*4)
 ```
-call by value: test(7,8) -> 7*7 -> 49
-call by name: 7*7 -> 49
+- call by value: test(7,8) -> 7*7 -> 49
+- call by name: 7*7 -> 49
 -> Here call by name is faster
-
 ```scala
 test (3+4, 2*4)
 ``` 
-call by value: test(7,2*4) -> test(7, 8) -> 7*7 -> 49
-call by name: (3+4)(3+4) -> 7(3+4) -> 7*7 -> 49
+- call by value: test(7,2*4) -> test(7, 8) -> 7*7 -> 49
+- call by name: (3+4)(3+4) -> 7(3+4) -> 7*7 -> 49
 -> The result is reached within the same steps.
