@@ -8,7 +8,13 @@
 - Functional Programming in Scala Capstone
 
 ## Quick start
-- dev 
+```bash
+# via Scala template : https://github.com/scala/scala-seed.g8
+sbt new scala/scala-seed.g8
+
+# via CLI  https://alvinalexander.com/scala/how-to-create-sbt-project-directory-structure-scala/
+
+``` 
 
 ## Ref 
 - Install Scala 
