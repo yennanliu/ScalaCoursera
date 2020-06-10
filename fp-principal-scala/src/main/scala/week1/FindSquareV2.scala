@@ -1,3 +1,5 @@
+// 2nd version of version : use bracket ({}) to shadow inner and outer variable
+
 package week1
 
 object FindSquareV2{
