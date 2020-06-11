@@ -1,4 +1,4 @@
-// 2nd version of version : use bracket ({}) to shadow inner and outer variable
+// 2nd version of FindSquare : use bracket ({}) to shadow inner and outer variable
 
 package week1
 

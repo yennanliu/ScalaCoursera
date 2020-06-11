@@ -1,4 +1,4 @@
-// 1st version of version
+// 1st version of FindSquare
 
 package week1
 

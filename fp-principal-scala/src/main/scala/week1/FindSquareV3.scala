@@ -1,4 +1,4 @@
-// 3rd version of version : remove redundant variable via bracket ({}) property
+// 3rd version of FindSquare : remove redundant variable via bracket ({}) property
 
 package week1
 
