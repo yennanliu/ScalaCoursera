@@ -2,3 +2,4 @@
 *.log
 target
 doc/.DS_Store
+project
