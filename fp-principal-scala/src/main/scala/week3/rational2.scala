@@ -20,7 +20,6 @@ object rational2{
 
  def main(args: Array[String]){
 
-
      println(makeString(addRational(new Rational(1,2), new Rational(3,4))))
 
  }
