@@ -1,7 +1,7 @@
 # [ScalaCoursera](https://www.coursera.org/specializations/scala?fbclid=IwAR1gnEYd2wFF4v3LPMusnhB1GIxR0xgnxHyjdqF3iyIQmrRHPBoKGrl_VfA)
 > Functional Programming in Scala Course 
-- [Functional Programming Principles in Scala](https://github.com/yennanliu/ScalaCoursera/tree/master/FP-Principal-Scala/target)
-	- [Call by name VS Call by value](https://github.com/yennanliu/ScalaCoursera/blob/master/doc/FP-Principal-Scala/call_by_value_call_by_name.md)
+- [Functional Programming Principles in Scala](https://github.com/yennanliu/ScalaCoursera/tree/master/fp-principal-scala)
+	- [Call by name VS Call by value](https://github.com/yennanliu/ScalaCoursera/blob/master/doc/fp-principal-scala/call_by_value_call_by_name.md)
 - Functional Program Design in Scala
 - Parallel programming
 - Big Data Analysis with Scala and Spark

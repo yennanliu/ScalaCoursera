@@ -12,10 +12,14 @@ package week3
 
 object ImportFromPackageDemo{
 
+	def error(msg: String) = throw new Error(msg)
+
  def main(args: Array[String]){
 
  	val x = new week3.rational.Rational(1,2)
  	println(x)
+
+ 	println(error("this is error msg"))
 
  }
 }
