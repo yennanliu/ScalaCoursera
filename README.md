@@ -28,3 +28,6 @@ sbt new scala/scala-seed.g8
 	- https://www.coursera.org/learn/progfun1/supplement/uV974/sbt-tutorial-and-submission-of-assignments-please-read
 -  Tech in Scala to deal with the parallelism challenge
 	- [Martin Odersky, "Working Hard to Keep It Simple"](https://www.youtube.com/watch?v=3jg1AheF4n0) - OSCON Java 2011
+- Scala API (library) ref
+	- https://www.scala-lang.org/api/current/
+	- https://docs.scala-lang.org/api/all.html
