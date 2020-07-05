@@ -1,5 +1,5 @@
 
-package wee5
+package week5
 
 object ListLast{
     def last[T](xs: List[T]): T = xs match {
