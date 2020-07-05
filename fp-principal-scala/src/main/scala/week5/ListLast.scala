@@ -9,8 +9,10 @@ object ListLast{
     }
 
  def main(args: Array[String]){
-    val a = Array(1,2,3,4)
+    val a = List(1,2,3,4)
     println(a)
-
+    println(last(a))
+    val b = List()
+    println(b)
     }
 }
