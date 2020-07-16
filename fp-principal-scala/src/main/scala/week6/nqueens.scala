@@ -36,5 +36,7 @@ object nqueens{
  def main(args: Array[String]){
     println(queens(4))
     println(queens(4) map show)
+    println( (queens(4) map show) mkString "\n" )
+    println( (queens(8) map show) mkString "\n" )
     }
 }
