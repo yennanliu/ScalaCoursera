@@ -9,7 +9,10 @@ object PuttingPiecesTogether{
  def main(args: Array[String]){
     val in = Source.fromURL("http://lamp.epfl.ch/files/content/sites/lamp/files/teaching/progfun/linuxwords")
     
-    val words = in.getLines.toList
+    //val words = in.getLines.toList
+
+    val words = in.getLines.toList filter (word => word forall (chr => chr.isLetter))
+
 
     val mnem = Map(
       '2' -> "ABC", '3' -> "DEF", '4' -> "GHI",
@@ -27,6 +30,23 @@ object PuttingPiecesTogether{
     println(wordCode("JAVA"))
     println(wordCode("java"))
 
+    def wordsForNum: Map[String, Seq[String]] =
+      // withDefaultValue : defult value 
+      words groupBy wordCode withDefaultValue Seq()
+
+    def encode(number: String): Set[List[String]] = 
+      if (number.isEmpty) Set(List())
+      else {
+        for {
+          split <- 1 to number.length
+          word <- wordsForNum(number take split)
+          rest <- encode(number drop split)
+        } yield word :: rest
+      }.toSet
+
+    // test
+    encode("7225247386")
+    println(encode("7225247386"))
 
  }
 }
