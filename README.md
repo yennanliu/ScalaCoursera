@@ -10,7 +10,8 @@
 ## Quick start
 ```bash
 # via Scala template : https://github.com/scala/scala-seed.g8
-sbt new scala/scala-seed.g8
+#sbt new scala/scala-seed.g8
+sbt new scala/scala-seed.g8 -o fp-design-in-scala
 
 # via CLI  https://alvinalexander.com/scala/how-to-create-sbt-project-directory-structure-scala/
 
