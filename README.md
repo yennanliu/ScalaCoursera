@@ -1,8 +1,9 @@
 # [ScalaCoursera](https://www.coursera.org/specializations/scala?fbclid=IwAR1gnEYd2wFF4v3LPMusnhB1GIxR0xgnxHyjdqF3iyIQmrRHPBoKGrl_VfA)
 > Functional Programming in Scala Course 
+
 - [Functional Programming Principles in Scala](https://github.com/yennanliu/ScalaCoursera/tree/master/fp-principal-scala)
 	- [Call by name VS Call by value](https://github.com/yennanliu/ScalaCoursera/blob/master/doc/fp-principal-scala/call_by_value_call_by_name.md)
-- Functional Program Design in Scala
+- [Functional Program Design in Scala](https://github.com/yennanliu/ScalaCoursera/tree/master/fp-design-in-scala)
 - Parallel programming
 - Big Data Analysis with Scala and Spark
 - Functional Programming in Scala Capstone
@@ -15,9 +16,17 @@ sbt new scala/scala-seed.g8 -o fp-design-in-scala
 
 # via CLI  https://alvinalexander.com/scala/how-to-create-sbt-project-directory-structure-scala/
 
+```
+```bash 
+cd fp-principal-scala && sbt run
+cd fp-design-in-scala && sbt run
 ``` 
 
 ## Ref 
+
+<details>
+<summary>Ref</summary>
+
 - Install Scala 
 	- https://www.coursera.org/learn/progfun1/supplement/BNOBK/tools-setup-please-read
 - Scala cheetsheet
@@ -32,3 +41,5 @@ sbt new scala/scala-seed.g8 -o fp-design-in-scala
 - Scala API (library) ref
 	- https://www.scala-lang.org/api/current/
 	- https://docs.scala-lang.org/api/all.html
+
+</details>
