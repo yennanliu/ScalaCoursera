@@ -28,8 +28,8 @@ cd fp-design-in-scala && sbt run
 
 ### Run the scala console (REPT)
 ```bash 
-cd fp-principal-scala && sbt
-console # in sbt shell
+cd fp-principal-scala && sbt console
+cd fp-design-in-scala && sbt console
 ``` 
 
 ## Ref 
