@@ -50,9 +50,10 @@ object RandomTreeGenerators{
             tree <- if (isLeaf) leafs else inners
         } yield tree
 
-     println(trees.generate)
-     println(trees.generate)
+     for (i <- 1 to 5)
+        println("i =  " + i + trees.generate)
 
-    }
+     // println(trees.generate)
+     }
 
 }
