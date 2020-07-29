@@ -9,6 +9,8 @@
 - Functional Programming in Scala Capstone
 
 ## Quick start
+
+### Build project template
 ```bash
 # via Scala template : https://github.com/scala/scala-seed.g8
 #sbt new scala/scala-seed.g8
@@ -17,9 +19,17 @@ sbt new scala/scala-seed.g8 -o fp-design-in-scala
 # via CLI  https://alvinalexander.com/scala/how-to-create-sbt-project-directory-structure-scala/
 
 ```
+
+### Run the scala scripts
 ```bash 
 cd fp-principal-scala && sbt run
 cd fp-design-in-scala && sbt run
+``` 
+
+### Run the scala console (REPT)
+```bash 
+cd fp-principal-scala && sbt
+console # in sbt shell
 ``` 
 
 ## Ref 
