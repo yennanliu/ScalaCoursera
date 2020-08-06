@@ -35,7 +35,13 @@ object Primes{
         guesses
     }
 
+    def isGoodEnough(guess: Double, x: Double) = 
+        math.abs((guess * guess - x ) / x) < 0.001
+
     println(sqrtStream(4).take(10).toList)
+
+
+    println(sqrtStream(4).filter(isGoodEnough(_ , 4)).take(10).toList)
 
 
  }
