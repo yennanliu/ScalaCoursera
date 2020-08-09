@@ -2,9 +2,7 @@
 
 package week4
 
-object BackAccount{
- 
- class BackAccount{
+class BankAccount{
     private var balance = 0
 
     def deposit(amount: Int): Unit = {
@@ -16,12 +14,4 @@ object BackAccount{
             balance = balance - amount
             balance
         } else throw new Error("insufficient funds")
-    }
-
- def main(args: Array[String]){
-
-     println("BackAccount")
-
 }
-
- }
