@@ -1,7 +1,5 @@
 // https://www.coursera.org/learn/progfun2/lecture/62Xed/lecture-4-6-discrete-event-simulation-implementation-and-test
 
-//import week4.Parameters
-
 object RunCircuit extends App{
 
 	println("Running RunCircuit program...")
@@ -12,4 +10,17 @@ object RunCircuit extends App{
 	probe("sum", sum)
 	probe("carry", carry)
 
+	// run the simulation 1 
+	in1 setSignal true
+	run()
+
+	// run the simulation 2 
+	in2 setSignal true
+	run()
+
+	// run the simulation 3
+	in1 setSignal false 
+	run()
+
+	// TODO : fix above run time errors
 }
