@@ -2,8 +2,6 @@
 
 package week4
 
-import week4.BankAccount
-
 abstract class Simulation{
 
 	type Action = () => Unit
@@ -24,4 +22,21 @@ abstract class Simulation{
 		val item = Event(currentTime + delay, () => block)
 		agenda = insert(agenda, item)
 	}
+
+	def run(){
+		afterDelay(0){
+			println("*** Simulation started, time = " + currentTime + " ***")
+		}
+		loop()
+	}
+
+	private def loop(): Unit = agenda match {
+		case first :: rest => 
+			agenda = rest
+			curtime = first.time
+			first.action()
+			loop()
+	}
+
+
 }
