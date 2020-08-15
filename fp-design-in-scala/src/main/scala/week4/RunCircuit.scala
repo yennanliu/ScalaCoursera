@@ -2,25 +2,25 @@
 
 object RunCircuit extends App{
 
-	println("Running RunCircuit program...")
-	object sim extends Circuits with Parameters 
-	import sim._
-	val in1, in2, sum, carry = new Wire
-	halfAdder(in1, in2, sum, carry)
-	probe("sum", sum)
-	probe("carry", carry)
+    println("Running RunCircuit program...")
+    object sim extends Circuits with Parameters 
+    import sim._
+    val in1, in2, sum, carry = new Wire
+    halfAdder(in1, in2, sum, carry)
+    probe("sum", sum)
+    probe("carry", carry)
 
-	// run the simulation 1 
-	in1 setSignal true
-	run()
+    // run the simulation 1 
+    in1 setSignal true
+    run()
 
-	// run the simulation 2 
-	in2 setSignal true
-	run()
+    // run the simulation 2 
+    in2 setSignal true
+    run()
 
-	// run the simulation 3
-	in1 setSignal false 
-	run()
+    // run the simulation 3
+    in1 setSignal false 
+    run()
 
-	// TODO : fix above run time errors
+    // TODO : fix above run time errors
 }
