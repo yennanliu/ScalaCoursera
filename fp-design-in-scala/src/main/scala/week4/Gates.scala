@@ -4,7 +4,6 @@ package week4
 
 import week4.Simulation
 
-
 abstract class Gates extends Simulation{
 
     def InverterDelay: Int
@@ -40,7 +39,6 @@ abstract class Gates extends Simulation{
         input addAction invertAction
     }
 
-
     def andGate(in1: Wire, in2: Wire, output: Wire) = {
         def andAction() = {
             val in1sig = in1.getSignal
@@ -71,7 +69,4 @@ abstract class Gates extends Simulation{
         }
         wire addAction probeAction
     }
-
 }
-
-
