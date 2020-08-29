@@ -6,14 +6,19 @@ import week5.Publisher
 
 class BankAccount extends Publisher{
     private var balance = 0
+    // show balance, but not give client access to modify balance
+    def currentBalance = balance
 
     def deposit(amount: Int): Unit = {
-        if (amount > 0) balance = balance + amount
+        if (amount > 0) {
+        	balance = balance + amount
+        	publish()
+        }
     }
 
-    def withdraw(amount: Int): Int = 
+    def withdraw(amount: Int): Unit = 
         if (0 < amount && amount <= balance){
             balance = balance - amount
-            balance
+            publish()
         } else throw new Error("insufficient funds")
 }
