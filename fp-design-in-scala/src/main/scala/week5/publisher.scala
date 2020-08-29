@@ -3,10 +3,10 @@
 package week5
 
 trait Subcriber{
-	def handler(pub: publisher)
+	def handler(pub: Publisher)
 }
 
-trait publisher{
+trait Publisher{
 
 	private var subcribers: Set[Subcriber] = Set()
 
