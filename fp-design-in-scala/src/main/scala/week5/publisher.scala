@@ -2,21 +2,21 @@
 
 package week5
 
-trait Subcriber{
+trait Subscriber{
 	def handler(pub: Publisher)
 }
 
 trait Publisher{
 
-	private var subcribers: Set[Subcriber] = Set()
+	private var subscribers: Set[Subscriber] = Set()
 
-	def subcribe(subcriber: Subcriber): Unit = 
-		subcribers += subcriber
+	def subscribe(subscriber: Subscriber): Unit = 
+		subscribers += subscriber
 
-	def unsubcribe(subcriber: Subcriber): Unit = 
-		subcribers -= subcriber
+	def unsubscribe(subscriber: Subscriber): Unit = 
+		subscribers -= subscriber
 
 	def publish(): Unit = 
-		subcribers.foreach(_.handler(this))
+		subscribers.foreach(_.handler(this))
 
 }
