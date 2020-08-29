@@ -18,5 +18,4 @@ trait Publisher{
 
     def publish(): Unit = 
         subscribers.foreach(_.handler(this))
-
 }

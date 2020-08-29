@@ -21,6 +21,4 @@ object observers extends App{
 	b deposit 30
 	println(c.totalBalance) //50
 
-
-
 }

@@ -17,5 +17,4 @@ class Consolidator(observed: List[BankAccount]) extends Subscriber{
     def handler(pub: Publisher) = compute()
 
     def totalBalance = total
-
 }
